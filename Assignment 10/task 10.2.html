@@ -5,53 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10.2</title>
+    <link rel="stylesheet" href="10.2style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
-    <style>
-   @keyframes color {
-  0%   { background: #33CCCC; }
-  20%  { background: #33CC36; }
-  40%  { background: #B8CC33; }
-  60%  { background: #FCCA00; }
-  80%  { background: #33CC36; }
-  100% { background: #33CCCC; }
-}
-
-body {
-  background: #33CCCC; /* Fallback */
-  animation: color 9s infinite linear;
-  text-align: center;
-  padding: 2em;
-}
-h1 {
-  text-align: center;
-  font-family: 'Kavoon', sans-serif;
-  font-size: 2.5em;
-  color: white;
-}
-        body{
-        font-family: 'Orbitron', sans-serif;
-        font-weight: 400;
-        font-size: 30px;
-        text-align: center;
-        margin-top: 300px;
-        text-shadow: 10px 10px 10px grey;
-        border: 10px solid black;
-
-        @mixin dots($count) {
-  $text-shadow: ();
-  @for $i from 0 through $count {
-    $text-shadow: $text-shadow,
-                 (-.5+(random()) * 3) + em
-                 (-.5+(random()) * 3) + em
-                 7px
-                 hsla(random() * 360, 100%, 50%,.9);
-  }
-  text-shadow: $text-shadow;
-}
-        }
-    </style>
 </head>
 <body>
    <script>
