@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.5</title> 
+    <link rel="stylesheet" href="10.5style.css">
+  
+</head>
+<body>
+    <div class="bg"></div>
+
+    <div class="star-field">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="sc">
+    <script>
+
+        var people = [
+  { name: "Ashish", age: 23 },
+  { name: "Ajay", age: 21 },
+  { name: "Arvind", age: 26 },
+  { name: "Mahesh", age: 28 },
+  { name: "Jay", age: 19 }
+];
+var new_array=people.map((i)=> i.age);
+var result=new_array.filter(filterAge).sort(function(n1,n2){return n2.age-n1.age});
+document.write("Filtered values are -: "+result);
+function filterAge(age){return age<25;}
+
+    </script>
+    </div>
+</body>
+</html>
