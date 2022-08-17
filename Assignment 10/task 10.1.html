@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 10.1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+    <style>
+        body{
+        background: rgb(238,174,202);
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 92%);        
+        font-weight: 400;
+        font-size: large;
+        font-family: 'Rubik Marker Hatch', cursive;
+        text-align: center;
+        margin-top: 300px;
+        text-shadow: 1010px 10px 10px grey;
+        border: 10px solid black
+        } 
+</style>
+</head>
+<body>
+    <script>
+        function details(deg,company){
+            document.write(this.first_name+" "+this.last_name+", "+deg+", "+company);
+        }
+        function edu(program,branch){
+            document.write(this.degree+program+", "+branch);
+        }
+        var person={
+            first_name:"Megha",
+            last_name:"Nigam"
+        };
+        var person_edu={
+            degree:"will be graduate in 2023, "
+        };
+        details.call(person,"trainee","Ingenuity Gaming");//using call method
+        document.write("<br>");
+        edu.apply(person_edu, ["B.tech","Computer science"]);//using apply method
+    </script>
+</body>
+</html>
