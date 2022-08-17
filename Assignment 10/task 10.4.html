@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.4</title>
+    <style>
+        body{
+        background: rgb(132,168,165);
+        background: linear-gradient(346deg, rgba(132,168,165,1) 0%, rgba(176,158,112,1) 100%);
+        font-weight: 400;
+        font-size: large;
+        font-family: 'Rubik Marker Hatch', cursive;
+        text-align: center;
+        margin-top: 300px;
+        text-shadow: 10px 10px 10px grey;
+        border: 10px solid black
+        } 
+    </style>
+</head>
+<body>
+    <script>
+        var people = [
+  { name: "Ashish", age: 23 },
+  { name: "Ajay", age: 21 },
+  { name: "Arvind", age: 26 },
+  { name: "Mahesh", age: 28 },
+  { name: "Jay", age: 19 }
+];
+var new_ar=people.map((i)=> "["+"NAME - "+i.name+" "+"AGE - "+i.age+"]");
+document.write("New Array is -: "+new_ar);
+    </script>
+</body>
+</html>
