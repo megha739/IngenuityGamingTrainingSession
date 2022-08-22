@@ -4,8 +4,9 @@
     box-sizing: border-box;
   }
   body {
-    background: linear-gradient(120deg, skyblue, blue);
-    color: white;
+    /*background: linear-gradient(120deg, skyblue, blue);*/
+    background-image: url("https://cdn.dribbble.com/users/1723450/screenshots/4925123/dribbleeee-me.gif");
+    /* color:gray; */
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
   }
@@ -17,24 +18,37 @@
     align-items: center;
   }
   header {
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+    text-shadow: 10px 10px 10px skyblue;
+    font-weight: 100;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+
   }
   
   form input,
   form button {
+    /* background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+background:lightskyblue;
     padding: 10px;
     border: none;
     font-size: 24px;
-    background: white;
+    font-family: 'Edu QLD Beginner', cursive;
+
+    /*  yellowgreen; */
     outline: none;
   }
   form button {
-    color: blue;
-    background-color: white;
+    color:palevioletred;
     cursor: pointer;
+    background: rgb(213,241,189);
+background: linear-gradient(90deg, rgba(213,241,189,1) 0%, rgba(34,226,182,1) 100%);
   }
   form button:hover {
-    color: white;
+    color:goldenrod;
     background-color: skyblue;
   }
 
@@ -49,8 +63,11 @@
     min-height: 25%;
   }
   .todo{
-    background-color: white;
-    font-size: 24px;
+    /* background: rgb(233,238,174);
+    background: linear-gradient(90deg, rgb(123, 129, 58) 0%, rgba(148,233,181,1) 100%);  */  
+    background-color: gainsboro;
+    font-family: 'Caveat', cursive;
+    font-size: 24px; 
     margin: 8px;
     display: flex;
     justify-content: space-between;
@@ -61,14 +78,17 @@
     flex: 1;
   }
   .cmpltbtn, .deltbtn{
-    background-color: teal;
+    background: rgb(217,237,238);
+background: linear-gradient(90deg, rgba(217,237,238,1) 0%, rgba(65,240,11,1) 100%);
+   
     border: none;
     padding: 16px;
     outline: none;
     font-size: 16px;
   }
   .deltbtn{
-    background-color: deeppink;
+    background: rgb(217,237,238);
+background: linear-gradient(90deg, rgba(217,237,238,1) 0%, rgba(240,11,11,1) 100%);
   }
   .todo_item{
     margin: 0 10px;

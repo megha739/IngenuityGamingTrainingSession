@@ -1,5 +1,5 @@
 //selector
-var todoinput=document.querySelector(".todo-input");
+var todoInput=document.querySelector(".todo-input");
 var btn=document.querySelector("button");
 var todolist=document.querySelector(".todo-list");
 
@@ -9,8 +9,9 @@ btn.onclick=function createTodo(e){
     newDiv.classList.add("todo");
 
     var newli=document.createElement("li");
-    newli.classList.add("todo_item");
-    newli.innerHTML=todoinput.Value;
+    newli.classList.add("todo_items");
+    newli.innerHTML=todoInput.value
+    //newli.innerHTML=todoInput.Value;
     newDiv.appendChild(newli);
 
     var cmpltbtn=document.createElement("button");
@@ -24,13 +25,14 @@ btn.onclick=function createTodo(e){
     newDiv.appendChild(deltbtn);
     //todolist.appendChild(newDiv);
 
+    
+    todoInput.value= "";
     todolist.appendChild(newDiv);
-    todoinput.Value=" ";
-
 
 };
 todolist.onclick=function checkBtn(e){
     var check=e.target;
+    console.log(check);
 
     if(check.classList[0]=='deltbtn'){
         var parentNode=check.parentElement;
@@ -38,8 +40,8 @@ todolist.onclick=function checkBtn(e){
 
     }
     else if(check.classList[0]=='cmpltbtn'){
-        var parentNode=check.parentElement;
-        parentNode.classList.add("check");
+        var parent=check.parentElement;
+        parent.classList.add("check");
 
 
     }
