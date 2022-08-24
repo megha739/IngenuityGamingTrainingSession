@@ -5,21 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="toDoStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="ass_13_style.css">
 </head>
 <body>
-      <section class="loader-wrapper">
+      <section id="loader-wrapper">
         <div>
             <p>l</p>
             <p>o</p>
@@ -57,16 +46,52 @@
          <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
          <!-- <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div> -->    
          </div>
-         </section>
+         </section> 
 
-    
-    
-<div>
-    <div class="content" >
-        <h1 style="color: white;"> world</h1></div>
-</div>
-
-    <script src="loader.js"></script>
-         
+         <div id="content" >
+          <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+      <form >
+              <div class="form-group">
+                <h1 class="v_inline_block">Sign up!!!</h1>
+                <h3 class="v_enquiry_mob">Save your data</h3>
+              </div>
+                <div class="form-group">
+                    <label >Name</label>
+                    <input type="text" class="form-control"  placeholder=" Enter Your Name">
+                </div>
+                <div class="form-group">
+                  <label>Age</label>
+                  <input type="text" class="form-control" placeholder=" Enter Your Age">
+              </div>
+                <div class="form-group">
+                    <label>Contact</label>
+                    <input type="text" class="form-control" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="form-group">
+                    <label >Select Country</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="">Select </option>
+                        <option value="2">INDIA</option>
+                        <option value="3">NEPAL</option>
+                        <option value="4">others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label >Comments</label>
+                    <textarea type="text" class="form-control" rows="4" cols="50" placeholder="comment"> </textarea>
+                </div>
+                <!-- <div class="">
+                    <button type="button" class="btn btn-primary btn-lg center-block">Submit</button>
+                </div> -->
+            </form>
+        </div>
+    </div>
+      </div>
+      <div id="data">
+        <h1 style="color: pink;">HELLO USER</h1>
+      </div>
+    <script src="ass_13_script.js"></script>    
         </body>
     </html>
