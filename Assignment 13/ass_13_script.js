@@ -4,7 +4,7 @@ var span = document.getElementsByClassName("close")[0];
    setTimeout(function(){ 
     stoploader();
     modal.style.display = "block";
-    }, 3000);
+    }, 3500);
  };
 function stoploader(){ 
     document.getElementById("loader-wrapper").style.display="none";
@@ -22,3 +22,22 @@ window.onclick = function(event) {
     document.getElementById("data").style.display="block";
   }
 }
+// var internetStatus = document.getElementById("internet");
+// window.addEventListener('load', function(event){
+//     detectInternet();
+// });
+// window.addEventListener('online', function(event){
+//     detectInternet();
+// });
+// window.addEventListener('offline', function(event){
+//     detectInternet();
+// });
+// function detectInternet(){
+//   if(navigator.onLine){
+//      internetStatus.textContent="You are  online";
+//      internetStatus.style.backgroundColor="green";
+//   }else{
+//     internetStatus.textContent="No Internet Connection";
+//     internetStatus.style.backgroundColor="red";
+//   }
+// }
