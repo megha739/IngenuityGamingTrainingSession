@@ -1,10 +1,160 @@
- body {
+:root {
+  --effect: hover 1s linear infinite;
+}
+*{
+   margin:0;
+}
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+  overflow: hidden;
+}
+div {
+  text-align: center;
+}
+p {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4em;
+  font-family: arial;
+  font-weight: 600;
+  transform: scale(.5);
+  color: #121212;
+  -webkit-text-stroke: 2px gray;
+}
+p:nth-child(1) {
+  animation: var(--effect);
+}
+p:nth-child(2) {
+  animation: var(--effect) .125s;
+}
+p:nth-child(3) {
+  animation: var(--effect) .25s;
+}
+p:nth-child(4) {
+  animation: var(--effect) .375s;
+}
+p:nth-child(5) {
+  animation: var(--effect) .5s;
+}
+p:nth-child(6) {
+  animation: var(--effect) .675s;
+}
+p:nth-child(7) {
+  animation: var(--effect) .75s;
+}
+@keyframes hover {
+  0% {
+    transform: scale(.5);
+    color: #121212;
+    -webkit-text-stroke: 2px gray;
+  }
+  20% {
+    transform: scale(1);
+    color: pink;
+    -webkit-text-stroke: 3px red;
+    filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 5px red)hue-rotate(10turn);
+  }
+  50% {
+    transform: scale(.5);
+    color: #121212;
+    -webkit-text-stroke: 2px gray;
+  }
+}
+  .leaf{
+      position:absolute ;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+  }
+  .leaf div{
+  position:absolute ;
+  display:block ;
+  }
+  .leaf div:nth-child(1){
+      left:20%; 
+      animation:fall 15s linear infinite ;
+      animation-delay:-2s;
+  }
+  .leaf div:nth-child(2){
+      left:70%; 
+      animation:fall 15s linear infinite ;
+      animation-delay:-4s;
+  }
+  .leaf div:nth-child(3){
+      left:10%; 
+      animation:fall 20s linear infinite ;
+      animation-delay:-7s;
+  }
+  .leaf div:nth-child(4){
+      left:50%; 
+     animation:fall 18s linear infinite ; 
+     animation-delay:-5s;
+  }
+  .leaf div:nth-child(5){
+      left:85%; 
+      animation:fall 14s linear infinite ;
+      animation-delay:-5s;
+  }
+  .leaf div:nth-child(6){
+      left:15%; 
+      animation:fall 16s linear infinite ;
+      animation-delay:-10s;
+  }
+  .leaf div:nth-child(7){
+      left:90%; 
+      animation:fall 15s linear infinite ;
+      animation-delay:-4s;
+  }
+  @keyframes fall{
+      0%{
+          opacity:1;
+          top:-10%;
+          transform:translateX (20px) rotate(0deg);
+      }
+      20%{
+          opacity:0.8;
+          transform:translateX (-20px) rotate(45deg);
+      }
+      40%{
+  
+          transform:translateX (-20px) rotate(90deg);
+      }
+      60%{
+          
+         transform:translateX (-20px) rotate(135deg); 
+      }
+      80%{
+      
+          transform:translateX (-20px) rotate(180deg);
+      }
+      100%{
+          
+          top:110%;
+          transform:translateX (-20px) rotate(225deg);
+      }
+      }
+  .leaf1{
+      transform: rotateX(180deg);
+  }
+   #content{
+      display: none ;
+   }
+/* body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;
     overflow: hidden;
-  } 
-  
+  }  */
   h1 {
     font-family: 'Bangers', cursive;
     text-align: center;
@@ -12,9 +162,7 @@
     font-weight: bolder;
     color: orangered;
     margin-top: 0%;
-
   }
-  
   #mole {
     position: absolute;
     left: 59%;
@@ -23,6 +171,7 @@
   #mud {
     position: relative;
     width: 500px;
+    right: 70%;
   }
   #start {
     height: 70px;
@@ -38,7 +187,6 @@
     left: 43%;
     cursor: pointer;
   }
-  
   .dirt {
     width: 170px;
     position: absolute;
@@ -70,8 +218,6 @@
     left: 65%;
   }
   .points {
-    
-    
     position: absolute;
     left: 1%;
    text-align: left;
@@ -79,8 +225,6 @@
     border-radius: 20%;
     border-left-style: hidden;
     border-right-style: hidden;
-   
-    
     font-family: 'Bangers', cursive;
     font-size: x-large;
     font-weight: bolder;
@@ -118,19 +262,7 @@
     left: 68%;
   }
 /*animation*/
-
-
-   /* .sc{
-    font-weight: 400;
-     font-size: 50px;
-     font-family: 'Rubik Marker Hatch', cursive;
-     text-align: center;
-     margin-top: 300px;
-     text-shadow: 10px 10px 10px grey; 
-     border: 10px solid black 
-} */
 .bg {
-  
  background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
  background-size: cover;
  height: 100%;
@@ -142,7 +274,6 @@
  overflow: hidden;
 }
 .bg:before {
-  
  content: "";
  width: 100%;
  height: 100%;

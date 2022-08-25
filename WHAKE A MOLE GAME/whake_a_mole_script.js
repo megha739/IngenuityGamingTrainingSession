@@ -6,13 +6,11 @@
 // var points=document.querySelectorAll(".points");
 // var mole=document.querySelectorAll(".mole");
 // var currentPoint = document.getElementById('currentPoint')
-
 // function start(){
 //     h1.style.visibility="hidden";
 //     startermole.style.visibility="hidden";
 //     starterdirt.style.visibility="hidden";
 //     startbtn.style.visibility="hidden";
-    
 //     for(var i=0;i<2;i++)points[i].style.visibility="visible";
 //     for(var i=0;i<6;i++)dirts[i].style.visibility="visible";
 //     for(var i=0;i<6;i++){
@@ -38,7 +36,15 @@
 //         currentPoint.textContent=inc;
 //         console.log(inc);
 //          }
-
+window.onload = function() {
+    setTimeout(function(){ 
+     stoploader();
+     }, 3500);
+  };
+ function stoploader(){ 
+     document.getElementById("loader-wrapper").style.display="none";
+ document.getElementById("content").style.display="block";
+ }
 var c=0;
 var h1=document.querySelector("h1");
 var start_mole=document.querySelector("#mole");
@@ -59,7 +65,6 @@ function start(){
 var func=setInterval(function(){
     var x=Math.floor(Math.random() * 6);
     mole[x].style.visibility="visible";
-    
     var fun = setTimeout(function (){
     mole[x].style.visibility="hidden";},600);   
 }
@@ -71,6 +76,3 @@ function pts(){
     //console.log(c) ;
 }
 console.log(c) ;
-
-
-
