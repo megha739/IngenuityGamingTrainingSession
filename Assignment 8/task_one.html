@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_1</title>
+</head>
+<body>
+    <h1 style="color: blue">
+        Task 1
+    </h1>
+    <b>
+     ....Remove spaces from
+        a string....
+    </b>
+    <p>
+        Formatted String(without extra whitespaces) is:
+        <span class="output"></span>
+    </p>
+    <button onclick="removeSpaces()">
+        Remove Spaces
+    </button>
+    <script type="text/javascript">
+
+    document.body.style.background="linear-gradient(lightskyblue 50%, yellow 50%)";
+    document.body.style.fontFamily="arial";
+    document.body.style.fontSize="40px";
+    document.body.style.textAlign="center";
+    document.body.style.marginTop="100px";
+    document.body.style.marginBottom="100px";
+    document.body.style.textShadow="10px 10px 10px grey";
+    document.body.style.border="10px solid black";
+
+         var inp = prompt("Enter a String you want to format");
+        function removeSpaces() {
+            originalText =inp;
+            removedSpacesText =inp.replace(/\s+/g,' ').trim();
+            document.querySelector('.output').textContent
+                    = removedSpacesText;
+   
+        }
+    </script>
+</body>
+</html>

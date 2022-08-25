@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_4</title>
+</head>
+<body>
+    <h1 style="color: blue">
+        Task 4
+    </h1>
+    <b>
+    <script>
+    document.body.style.background="linear-gradient(90deg, rgba(182,182,221,1) 50%, rgba(148,187,233,1) 100%)";
+    document.body.style.fontFamily="arial";
+    document.body.style.fontSize="20px";
+    document.body.style.textAlign="center";
+    document.body.style.marginTop="150px";
+    document.body.style.textShadow="10px 10px 10px grey";
+    var marks=[10,15,45,57,75,95,24,20,30,99,100,21,50,60];
+    var c=0;
+    marks.forEach(element => {
+        if(element<30){
+            c++;
+        }  
+    });
+    if(c>0){
+        document.write("<h1>"+"ALL STUDENTS ARE NOT PASSED"+"</h1>" );
+        document.write("<br>")
+        document.write("<hr>")
+        document.write("<h1>"+"Marks obtained by all the students are -: "+"</h1>"+marks );
+    }
+    else{
+        document.write("<h1>"+"ALL STUDENTS ARE PASSED"+"</h1>" );
+        document.write("<br>")
+        document.write("<hr>")
+        document.write("<h1>"+"Marks obtained by all the students are -: "+"</h1>"+marks );
+
+    } 
+</script> 
+</body>
+</html>

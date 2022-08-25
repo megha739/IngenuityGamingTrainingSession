@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_fourth</title>
+</head>
+<body>
+    <script>
+        function check_string(str){
+            if(str.substring(0,3)=="new"){
+                return str
+
+            }
+            return "new "+str;
+        }
+        document.write(check_string("abc")+"<br>")
+        document.write(check_string("new abc"))
+    </script>
+</body>
+</html>

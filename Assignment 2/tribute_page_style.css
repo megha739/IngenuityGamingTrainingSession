@@ -1,0 +1,46 @@
+.body{
+    background-color:lightcyan;
+    border: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    
+}
+.heading{
+    font-style: italic;
+    background-color:grey;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.image{
+    background-image: url("https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2022/07/21150623/Compress_draupadi_murmu.jpg");
+    width: 90vw;
+    height: 100vh;
+   margin-left: 20px;
+   margin-right: 20px;
+   background-size: cover;
+   
+   
+   
+    
+    background-repeat: no-repeat;
+}
+.text{
+    background-color: lightgray;
+    font-style: oblique;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-color: blue;
+
+}
+.div1{
+    text-align: center;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    margin: 20px;
+    padding: 20px;
+
+}
