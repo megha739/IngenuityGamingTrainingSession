@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.755);
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #canvas {
+    margin-top: 10px;
+    background-size: cover;
+    /* background-image: url("Black_Road_PNG_Clip_Art_Image-removebg-preview.png"); */
+    background-repeat: no-repeat;
+    background-color: azure;
+    border-radius: 10px;
+  }
+  
+  #source , #source2{
+    display: none;
+  }
