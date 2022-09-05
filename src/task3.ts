@@ -7,6 +7,6 @@ function add(...input:number[]){
     return sum;
 }
 
-console.log(add(1,2)); 
-console.log(add(1,2,3)); 
-console.log(add(1,2,3,4,5)); 
+console.log("sum is ",add(1,2)); 
+console.log("sum is ",add(1,2,3)); 
+console.log("sum is ",add(1,2,3,4,5)); 
