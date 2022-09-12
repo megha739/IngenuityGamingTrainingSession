@@ -2,7 +2,7 @@ var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 const image = document.getElementById("source");
-const image2 = document.getElementById("source2");
+// const image2 = document.getElementById("source2");
 
 const player = {
   w: 50,
@@ -24,8 +24,8 @@ const p = {
     dy: 0,
   };
 
-  function road() {
-    ctx.drawImage(image2, p.x, p.y, p.w, p.h);}
+  // function road() {
+  //   ctx.drawImage(image2, p.x, p.y, p.w, p.h);}
 
 function drawPlayer() {
   ctx.drawImage(image, player.x, player.y, player.w, player.h);
@@ -41,12 +41,12 @@ function newPos() {
 
   detectWalls();
 }
-function newRoad() {
-    p.x += p.dx;
-    p.y += p.dy;
+// function newRoad() {
+//     p.x += p.dx;
+//     p.y += p.dy;
   
-    // detectWalls();
-  }
+//     // detectWalls();
+//   }
 
 function detectWalls() {
   // Left wall
@@ -74,8 +74,8 @@ function update() {
     
   clear();
   
-  road();
-  newRoad()
+  // road();
+  // newRoad()
   
   drawPlayer();
   

@@ -6,17 +6,20 @@
   body {
     min-height: 100vh;
     color: white;
-    background-color: rgba(0, 0, 0, 0.755);
-    font-family: arial;
+    /* background-color: rgba(0, 0, 0, 0.755); */
+    background-image: url("https://wallpaperaccess.com/full/100659.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
   #canvas {
     margin-top: 10px;
     background-size: cover;
-    /* background-image: url("Black_Road_PNG_Clip_Art_Image-removebg-preview.png"); */
+     background-image: url("https://th.bing.com/th/id/R.f7d2e670c1a9682c45c8266826fd2bf9?rik=Ez4BC8wVjqFG8A&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2fa%2fd%2f812087-large-desert-background-1920x1224-for-tablet.jpg&ehk=wcdiAertq1CAJpXHzEsPNCWZMwqUVqUk%2fvVGMoYcMkQ%3d&risl=&pid=ImgRaw&r=0"); 
     background-repeat: no-repeat;
     background-color: azure;
     border-radius: 10px;
